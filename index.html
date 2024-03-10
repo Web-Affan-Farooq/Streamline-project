@@ -8,12 +8,47 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: black;
+            background-image: linear-gradient(to top right, pink,blue);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-        
+        .navbar {
+            width: 100%;
+            height: 50px;
+            background-color: grey;
+            box-shadow: 20px 20px 90px 20px purple;
+        }
+        .navbar > ul > li {
+            display: inline-block;
+            padding:10px 20px;
+            border-radius: 10px;
+            
+        }
+        .logo {
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bolder;
+            color:white;
+        }
+        .navbar > button {
+            width: 130px;
+            height: 45px;
+            border-radius:23px;
+            float: right;
+        }
     </style>
 </head>
 <body>
-    <h1>This is My first site</h1>
+    <header class="header">
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <button>signup</button>
+        </nav>
+    </header>
 </body>
 </html>
